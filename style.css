@@ -1,0 +1,30 @@
+:root{
+    --color: #fff;
+    --bg-color: #c24823;
+    --font-size: 16px;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    height: 40em;
+    width: 100%;
+    text-align: center;
+   
+}
+.header{
+    grid-column: 1/4;
+    
+    
+}
+.sidebar{
+    grid-row: 2/3;
+}
+.footer{
+    grid-column: 1/3;
+}
