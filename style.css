@@ -2,18 +2,21 @@
     --color: #fff;
     --bg-color: #F9F1F0;
     --sideColor: #F8AFA6;
-    --main: #74BDCB;
+    --main: #4bd5e7;
     --textColor: #000;
     --font-size: 16px;
+   
     
 }
 *{
     padding: 0;
     margin: 0;
+    font-family: montserrat;
 }
 a{
     text-decoration: none;
     color: #fff;
+    font-size: var(--font-size);
     
 }
 a:hover{
@@ -26,7 +29,7 @@ a:hover{
     height: 40em;
     width: 100%;
     text-align: center;
-   
+   overflow: auto;
 }
 .child{
     padding: 20px;
@@ -39,7 +42,11 @@ a:hover{
     justify-content: space-between;
     align-items: center;
     background-color: var(--color);
-    box-shadow: 3px 3px 10px #666, -3px -3px 10px #fff;
+    
+}
+.searchBar{
+    display: flex;
+    justify-content: space-evenly;
 }
 .search{
     width: 80%;
@@ -55,8 +62,16 @@ a:hover{
     border-radius: 50%;
     height: 2.5em;
     width: 2.5em;
-    margin-left: 10px;
     background: var(--color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.searchIcon:hover{
+    cursor: pointer;
+}
+.searchIcon i{
+    color: #000;
 }
 .profile{
     display: flex;
@@ -77,7 +92,7 @@ a:hover{
     grid-gap: 10px;
     padding: 12px;
 }
-.tasks{
+button{
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -90,7 +105,7 @@ a:hover{
     background-color: var(--sideColor);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.37fr;
+    grid-template-rows: 0.3fr 0.3fr 0.4r 1fr;
     place-content: start;
     text-align: left !important;
     color: #fff;
@@ -103,6 +118,7 @@ a:hover{
 }
 .dash{
     font-size: 1.5em;
+    padding-bottom: 10px;
 }
 .lists{
     padding: 4px;
@@ -116,6 +132,43 @@ a:hover{
 .tool{
     padding: 4px;
     font-size: 1em;
+}
+.categories{
+    padding-bottom: 10px;
+}
+.bottom{
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 25px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 10px;
+    color: #000;
+    gap: 5px;
+    text-align: center;
+}
+.bottom h2{
+    color: var(--sideColor);
+}
+.bottom span{
+    margin-top: -6px;
+    font-size: 14px;
+}
+.signup{
+    padding: 0px;
+    border-radius: 30px;
+    background-color: var(--sideColor);
+    height: 3em;
+
+}
+.signup:hover{
+    border: 5px solid var(--sideColor);
+    background: transparent;
+    cursor: pointer;
+    color: var(--sideColor);
+    transition: 0.6s ease-in-out;
 }
 .main{
     background: var(--bg-color);
@@ -140,23 +193,31 @@ a:hover{
     font-size: 20px;
 
 }
-.articles  > p {
-    padding: 5px;
-    
-}
 .numbers{
     font-size: 2em;
     color: #fff;
+    margin-top: -20px;
 }
+.image{
+    position: relative;
+    left: 40%;
+    top: -15%;
+    overflow: auto;
+}
+.image i{
+    color: #fff;
+}
+
 .numbers > span{
     font-size: 16px;
     color: #000;
+    margin-top: -2100px;
 }
 .articles:nth-child(2){
-    background: var(--sideColor)
+    background-color: var(--sideColor)
 }
 .articles:nth-child(3){
-    background: rgb(2, 153, 2);
+    background: #4bd5e7;
 }
 .articles:nth-child(4){
     grid-column: 1/2.5;
@@ -173,4 +234,5 @@ a:hover{
     grid-column: 2/3;
     height: 10px;
     background-color: var(--sideColor);
+    color: #fff;
 }
