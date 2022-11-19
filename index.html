@@ -1,27 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/51d7be4687.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="child header">
-            header
+      <div class="child header">
+        <div class="searchBar">
+          <input
+            type="search"
+            class="search"
+            name=""
+            id=""
+            placeholder="Type to search ..."
+          /><button class="searchIcon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-        <div class="child sidebar">
-            sidebar
+        <div class="profile">
+          <img src="./images/me.png" width="50rem" class="img" alt="" />
+          <span class="proText">Hello, Abdulwadud</span>
         </div>
-        <div class="child main">
-            Article
+        <div class="buttonsTop">
+          <button class="tasks">New Post</button>
+          <button class="tasks">Delete</button>
+          <button class="tasks">Upload</button>
         </div>
-        <div class="child footer">
-            footer
+      </div>
+      <div class="child sidebar">
+        <div class="logo">LOGO</div>
+        <div class="dash">
+          <i class="fa-solid fa-objects-column"></i>Dashboard
         </div>
+        <div class="categories">
+          <nav>
+            <ul class="nav-ul">
+              <nav>
+                <ul class="nav-ul">
+                  <li class="lists">
+                    <i class="fa-solid fa-house"></i><a href="#"> Home</a></i>
+                  </li>
+                  <li class="lists">
+                    <a href="#"
+                      ><i class="fa-solid fa-address-card"></i> Profile</a
+                    >
+                  </li>
+                  <li class="lists">
+                    <a href="#"><i class="fa-solid fa-message"></i> Messages</a>
+                  </li>
+                  <li class="lists">
+                    <a href="#"
+                      ><i class="fa-solid fa-clock-rotate-left"></i> History</a
+                    >
+                  </li>
+                  <li class="lists">
+                    <a href="#"><i class="fa-solid fa-list-check"></i> Tasks</a>
+                  </li>
+                  <li class="lists">
+                    <a href="#"
+                      ><i class="fa-solid fa-users"></i> Communities</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </ul>
+          </nav>
+        </div>
+        <div class="tools">
+          <nav>
+            <ul class="nav-ul">
+              <nav>
+                <ul class="nav-ul">
+                  <li class="lists">
+                    <a href="#">Settings</a>
+                  </li>
+                  <li class="lists">
+                    <a href="#">Support</a>
+                  </li>
+                  <li class="lists">
+                    <a href="#">Privacy</a>
+                  </li>
+                </ul>
+              </nav>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="child main">
+        <div class="articles one">
+          <p class="Videos">Videos</p>
+          <p class="image"></p>
+          <p class="numbers">
+            45,000
+            <br /><span class="down">Downloads</span>
+          </p>
+          <p class="Seemore"><a href="#">View Stats</a></p>
+        </div>
+        <div class="articles two">
+          <p class="Videos">Photos</p>
+          <p class="image"></p>
+          <p class="numbers">
+            75,000
+            <br /><span class="down">Downloads</span>
+          </p>
+          <p class="Seemore"><a href="#">View Stats</a></p>
+        </div>
+        <div class="articles three">
+          <p class="Videos">Musics</p>
+          <p class="image"></p>
+          <p class="numbers">
+            60,000
+            <br /><span class="down">Downloads</span>
+          </p>
+          <p class="Seemore"><a href="#">View Stats</a></p>
+        </div>
+        <div class="articles 4">Article 4</div>
+        <div class="articles 5">Article 5</div>
+      </div>
+      <div class="child footer">footer</div>
     </div>
-    
-</body>
+  </body>
 </html>
